@@ -1,0 +1,19 @@
+2021-02-03 22:33:44,993 - test_login.py[line:36] - INFO: 登录功能-正常场景用例-输入正确的用户名和密码登录
+2021-02-03 22:33:44,993 - basepage.py[line:21] - INFO: 登录页面_用户名输入,等待('xpath', '//input[@name="phone"]')元素可见
+2021-02-03 22:33:45,014 - basepage.py[line:33] - INFO: 元素等待结束，开始时间为：2021-02-03 22:33:44.993343，结束时间为：2021-02-03 22:33:45.014265，等待时长为：-1 day, 23:59:59.979078
+2021-02-03 22:33:45,014 - basepage.py[line:52] - INFO: 登录页面_用户名输入,查找元素('xpath', '//input[@name="phone"]')
+2021-02-03 22:33:45,019 - basepage.py[line:69] - INFO: 登录页面_用户名输入,在('xpath', '//input[@name="phone"]')中输入信息18684720553
+2021-02-03 22:33:45,091 - basepage.py[line:21] - INFO: 登录页面_密码输入,等待('xpath', '//input[@name="password"]')元素可见
+2021-02-03 22:33:45,112 - basepage.py[line:33] - INFO: 元素等待结束，开始时间为：2021-02-03 22:33:45.091149，结束时间为：2021-02-03 22:33:45.112092，等待时长为：-1 day, 23:59:59.979057
+2021-02-03 22:33:45,112 - basepage.py[line:52] - INFO: 登录页面_密码输入,查找元素('xpath', '//input[@name="password"]')
+2021-02-03 22:33:45,121 - basepage.py[line:69] - INFO: 登录页面_密码输入,在('xpath', '//input[@name="password"]')中输入信息python
+2021-02-03 22:33:45,171 - basepage.py[line:21] - INFO: 登录页面_点击登录按钮,等待('xpath', '//button[text()="登录1"]')元素可见
+2021-02-03 22:34:15,532 - basepage.py[line:27] - ERROR: 元素可见失败
+Traceback (most recent call last):
+  File "E:\Workspace\Lemon_Web_test\Common\basepage.py", line 24, in wait_ele_visiable
+    WebDriverWait(self.driver,timeout,poll_fre).until(EC.visibility_of_element_located(locator))
+  File "D:\python\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-02-03 22:34:15,838 - basepage.py[line:156] - INFO: 页面截图成功并保存在E:\Workspace\Lemon_Web_test\OutPuts/screenshots/登录页面_点击登录按钮_---20210203223415.png
